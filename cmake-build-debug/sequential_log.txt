@@ -1,0 +1,972 @@
+Time taken by function: 2023 microseconds
+Number of comparisons: 4
+Time taken by function: 0 microseconds
+Number of comparisons: 4
+Time taken by function: 0 microseconds
+Number of comparisons: 4
+Time taken by function: 4011 microseconds
+Number of comparisons: 96
+Time taken by function: 1013 microseconds
+Number of comparisons: 34
+Time taken by function: 886 microseconds
+Number of comparisons: 34
+Time taken by function: 0 microseconds
+Number of comparisons: 34
+Time taken by function: 0 microseconds
+Number of comparisons: 34
+Time taken by function: 0 microseconds
+Number of comparisons: 34
+Time taken by function: 0 microseconds
+Number of comparisons: 34
+Time taken by function: 4096 microseconds
+Number of comparisons: 46
+Time taken by function: 0 microseconds
+Number of comparisons: 35
+Time taken by function: 0 microseconds
+Number of comparisons: 35
+Time taken by function: 1014 microseconds
+Number of comparisons: 24
+Time taken by function: 3632 microseconds
+Number of comparisons: 35
+Time taken by function: 0 microseconds
+Number of comparisons: 35
+Time taken by function: 0 microseconds
+Number of comparisons: 35
+Time taken by function: 0 microseconds
+Number of comparisons: 35
+Time taken by function: 0 microseconds
+Number of comparisons: 34
+Time taken by function: 1433 microseconds
+Number of comparisons: 34
+Time taken by function: 1015 microseconds
+Number of comparisons: 34
+Time taken by function: 3919 microseconds
+Number of comparisons: 34
+Time taken by function: 0 microseconds
+Number of comparisons: 16
+Time taken by function: 0 microseconds
+Number of comparisons: 16
+Time taken by function: 859 microseconds
+Number of comparisons: 101
+Time taken by function: 1474 microseconds
+Number of comparisons: 101
+Time taken by function: 0 microseconds
+Number of comparisons: 8
+Time taken by function: 0 microseconds
+Number of comparisons: 18
+Time taken by function: 0 microseconds
+Number of comparisons: 7
+Time taken by function: 0 microseconds
+Number of comparisons: 29
+Time taken by function: 0 microseconds
+Number of comparisons: 38
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 7
+Time taken by function: 0 microseconds
+Number of comparisons: 92
+Time taken by function: 0 microseconds
+Number of comparisons: 1
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 1072 microseconds
+Number of comparisons: 42
+Time taken by function: 0 microseconds
+Number of comparisons: 28
+Time taken by function: 0 microseconds
+Number of comparisons: 39
+Time taken by function: 0 microseconds
+Number of comparisons: 33
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 1180 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 97
+Time taken by function: 0 microseconds
+Number of comparisons: 3
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 1009 microseconds
+Number of comparisons: 0
+Time taken by function: 999 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 97
+Time taken by function: 0 microseconds
+Number of comparisons: 3
+Time taken by function: 1022 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 97
+Time taken by function: 0 microseconds
+Number of comparisons: 3
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 97
+Time taken by function: 1012 microseconds
+Number of comparisons: 70
+Time taken by function: 0 microseconds
+Number of comparisons: 30
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 6
+Time taken by function: 0 microseconds
+Number of comparisons: 48
+Time taken by function: 0 microseconds
+Number of comparisons: 23
+Time taken by function: 0 microseconds
+Number of comparisons: 23
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 82
+Time taken by function: 0 microseconds
+Number of comparisons: 18
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 45
+Time taken by function: 0 microseconds
+Number of comparisons: 77
+Time taken by function: 0 microseconds
+Number of comparisons: 23
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0
+Time taken by function: 0 microseconds
+Number of comparisons: 0

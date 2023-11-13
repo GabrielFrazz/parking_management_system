@@ -1,0 +1,3 @@
+C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system2.0/cmake-build-debug/CMakeFiles/PARKING_MANAGEMENT_SYSTEM.dir
+C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system2.0/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system2.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
