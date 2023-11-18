@@ -4,6 +4,7 @@
 
 #include "UI.h"
 #include "parking_lot.h"
+#include "customer.h"
 
 int main() {
     //random seed

@@ -26,6 +26,14 @@
 *.a
 *.lib
 
+*.txt
+*.bin
+*.dat
+*.csv
+*.json
+*.xml
+
+*.log
 # Executables
 *.exe
 *.out

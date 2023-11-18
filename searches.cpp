@@ -73,12 +73,11 @@ Customer* binarySearchCustomer(FILE* file, int targetCod, int size) {
     int left = 0;
     int right = size - 1;
 
-
     while (left <= right) {
-        int mid = left + (right - left) / 2;
+        int mid = (left+right) / 2;
 
         // move the file cursor to the middle of the file
-        fseek(file, mid * sizeof(Customer), SEEK_SET);
+        fseek(file, mid * Customer().registerSize(), SEEK_SET);
 
         // read the customer at the middle position
         Customer *customer = Customer::readCustomer(file);
