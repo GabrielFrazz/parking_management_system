@@ -171,6 +171,21 @@ Customer ParkingLotSearch(FILE *file, int parkingSpot) {
     parkingLotFile.close();
 }
 
+void printBinaryLog(){
+    // Print the contents of the binary_log.txt
+    std::ifstream binaryLog("binary_log.txt");
+    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<<<<\n\n";
+    std::cout << binaryLog.rdbuf();
+    binaryLog.close();
+}
+
+void printSequentialLog(){
+    // Print the contents of the binary_log.txt
+    std::ifstream sequentialLog("sequential_log.txt");
+    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<<<<\n\n";
+    std::cout << sequentialLog.rdbuf();
+    sequentialLog.close();
+}
 
 
 

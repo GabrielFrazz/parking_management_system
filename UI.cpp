@@ -106,7 +106,16 @@ void MENU(FILE *customers)
             std::cin >> id;
             //call the function to search for a customer
             c = sequentialSearchOfACustomer(customers, id);
-            c.printCustomer();
+            if (c.cod != -1) {
+                std::cout << "\nCustomer found:\n";
+                c.printCustomer();
+            } else {
+                std::cout << "\nCustomer not found.\n";
+            }
+
+            // Print the contents of the sequential_log.txt
+            printSequentialLog();
+            
             std::cout << "\n";
             system("PAUSE");
             std::cin.get();
@@ -136,6 +145,9 @@ void MENU(FILE *customers)
             } else {
                 std::cout << "\nCustomer not found.\n";
             }
+            // Print the contents of the binary_log.txt
+            printBinaryLog();
+            
             std::cout << "\n";
             system("PAUSE");
             std::cin.get();
