@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <winbase.h>
 
 void MSG_MENU()
 {
@@ -15,8 +16,8 @@ void MSG_MENU()
     std::cout << "\n\n\t3. Print database"; //done
     std::cout << "\n\n\t4. Sequential search for a customer"; //done
     std::cout << "\n\n\t5. Binary search for a customer"; //done
-    std::cout << "\n\n\t6. Populate parking lot"; //done, not printing properly
-    std::cout << "\n\n\t7. Print parking lot"; //done, not printing properly when populated
+    std::cout << "\n\n\t6. Populate parking lot"; //done
+    std::cout << "\n\n\t7. Print parking lot"; //done
     std::cout << "\n\n\t8. search for a parking space"; //done
     std::cout << "\n\n\t9. Park a car"; //done
     std::cout << "\n\n\t10. Leave"; //done
@@ -44,6 +45,12 @@ void MENU(FILE *customers)
         {
         case 1:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             customers = fopen("customers.dat", "wb");
             if (!customers) {
                 std::cerr << "Error opening file for reading." << std::endl;
@@ -62,6 +69,12 @@ void MENU(FILE *customers)
 
         case 2:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             customers = fopen("customers.dat", "wb");
             if (!customers) {
                 std::cerr << "Error opening file for reading." << std::endl;
@@ -79,6 +92,12 @@ void MENU(FILE *customers)
 
         case 3:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             customers = fopen("customers.dat", "rb");
             if (!customers) {
                 std::cerr << "Error opening file for reading." << std::endl;
@@ -94,11 +113,19 @@ void MENU(FILE *customers)
 
         case 4:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             customers = fopen("customers.dat", "rb");
             if (!customers) {
                 std::cerr << "Error opening file for reading." << std::endl;
                 break;
             }
+            //flush the buffer
+            std::cout.flush();
             std::cout << "\n\n\t >>>>>> MSG: Sequential search for a customer...!!! <<<<<<\n";
             //ask for the customer id
             int id;
@@ -115,13 +142,19 @@ void MENU(FILE *customers)
 
             // Print the contents of the sequential_log.txt
             printSequentialLog();
-            
+
             std::cout << "\n";
             system("PAUSE");
             std::cin.get();
             break;
         case 5:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             customers = fopen("customers.dat", "rb");
             if (!customers) {
                 std::cerr << "Error opening file for reading." << std::endl;
@@ -155,6 +188,12 @@ void MENU(FILE *customers)
 
         case 6:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             std::cout << "\n\n\t >>>>>> MSG: Populating parking lot...!!! <<<<<<\n";
             //call the function to populate the parking lot
             populateParkingLot();
@@ -164,6 +203,12 @@ void MENU(FILE *customers)
             break;
         case 7:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             customers = fopen("customers.dat", "rb");
             if (!customers) {
                 std::cerr << "Error opening file for reading." << std::endl;
@@ -178,6 +223,13 @@ void MENU(FILE *customers)
             break;
 
         case 8:
+            system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             customers = fopen("customers.dat", "rb");
             if (!customers) {
                 std::cerr << "Error opening file for reading." << std::endl;
@@ -198,6 +250,13 @@ void MENU(FILE *customers)
             std::cin.get();
             break;
         case 9:
+            system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             std::cout << "\n\n\t >>>>>> MSG: choose the option...!!! <<<<<<\n";
             std::cout << "\n[1] park an existing customer\n[2] park a new customer\n";
             std::cout << "--->";
@@ -232,6 +291,12 @@ void MENU(FILE *customers)
 
         case 10:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             std::cout << "\n\n\n\t >>>>>> MSG: choose the spot to leave...!!! <<<<<<\n";
             std::cout << "Enter parking spot: ";
             std::cin >> spot;
@@ -243,12 +308,24 @@ void MENU(FILE *customers)
             break;    
         case 11:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             std::cout << "\n\n\n\t >>>>>> MSG: Exiting the module...!!! <<<<<<\n";
             system("PAUSE");
             std::cin.get();
             break;
         default:
             system("cls");
+            // Add a small delay
+            #ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+            #else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+            #endif
             std::cout << "\n\n\n\t >>>>>> MSG: Enter a valid option!!! <<<<<<\n";
             system("PAUSE");
             std::cin.get();

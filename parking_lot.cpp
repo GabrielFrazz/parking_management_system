@@ -8,6 +8,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <winbase.h>
 
 void createEmptyParkingLot() {
     std::ofstream parkingLotFile("parking_lot.dat", std::ios::out);
@@ -114,9 +115,9 @@ void printParkingLot(FILE *file) {
         std::string id = line.substr(pos + delimiter.length());
         int customerId = std::stoi(id);
         if(customerId != -1){
+            fseek(file, 0, SEEK_SET); // Reset the file pointer to the beginning of the file
             c = sequentialSearchOfACustomer(file, customerId);
-            std::fflush(stdout);
-            printf("%s : %s\n", spot.c_str(), c.name.c_str());
+            std::cout << spot << " : " << c.name << std::endl;
         }else{
             std::cout << spot << " : " << "empty parking space" << std::endl;
         }
