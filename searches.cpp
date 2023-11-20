@@ -7,7 +7,7 @@
 
 Customer sequentialSearchOfACustomer(FILE *file, int id)
 {
-    Customer customer(0, "", "", "", "", "");
+    Customer customer(-1, "", "", "", "", "");
     int cod;
     std::string name;
     std::string cpf;
@@ -61,8 +61,13 @@ Customer sequentialSearchOfACustomer(FILE *file, int id)
 
     std::ofstream outfile;
     outfile.open("sequential_log.txt", std::ios_base::out); // open file in append mode
-    outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
-    outfile << "Number of comparisons: " << comparisons << std::endl;
+    outfile << "\t>>>>> Sequential search <<<<<" << std::endl;
+    outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << id <<std::endl;
+    if(customer.cod == -1){
+        outfile << "Customer not found" << std::endl;
+    }
+    outfile << "- Time taken by function: " << duration.count() << " microseconds" << std::endl;
+    outfile << "- Number of comparisons: " << comparisons << std::endl;
     outfile.close(); // close file
 
     return customer;
@@ -94,8 +99,10 @@ Customer* binarySearchCustomer(FILE* file, int customerId) {
 
             std::ofstream outfile;
             outfile.open("binary_log.txt", std::ios_base::out); // open file in append mode
-            outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
-            outfile << "Number of comparisons: " << comparisons << std::endl;
+            outfile << "\t>>>>> Binary search <<<<<" << std::endl;
+            outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << customerId <<std::endl;
+            outfile << "- Time taken by function: " << duration.count() << " microseconds" << std::endl;
+            outfile << "- Number of comparisons: " << comparisons << std::endl;
             outfile.close(); // close file
             // Found the customer
             return customer;
@@ -118,8 +125,11 @@ Customer* binarySearchCustomer(FILE* file, int customerId) {
 
     std::ofstream outfile;
     outfile.open("binary_log.txt", std::ios_base::out); // open file in append mode
-    outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
-    outfile << "Number of comparisons: " << comparisons << std::endl;
+    outfile << "\t>>>>> Binary search <<<<<" << std::endl;
+    outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << customerId <<std::endl;
+    outfile << "- !Customer not found!" << std::endl;
+    outfile << "- Time taken by function: " << duration.count() << " microseconds" << std::endl;
+    outfile << "- Number of comparisons: " << comparisons << std::endl;
     outfile.flush(); // flush buffer
     outfile.close(); // close file
 
