@@ -115,7 +115,7 @@ void printParkingLot(FILE *file) {
         int customerId = std::stoi(id);
         if(customerId != -1){
             c = sequentialSearchOfACustomer(file, customerId);
-            std::cout.flush();
+            std::fflush(stdout);
             printf("%s : %s\n", spot.c_str(), c.name.c_str());
         }else{
             std::cout << spot << " : " << "empty parking space" << std::endl;
@@ -126,7 +126,7 @@ void printParkingLot(FILE *file) {
 
 }
 
-void leave(int id) {
+void leave(int parkingSpot) {
     std::ifstream inFile("parking_lot.dat");
     if (!inFile) {
         std::cerr << "Erro ao abrir o arquivo " << "parking_lot.dat" << std::endl;
@@ -143,17 +143,16 @@ void leave(int id) {
 
     inFile.close();
 
-    // Update the specific line
-    for (int i = 0; i < lines.size(); ++i) {
-        std::string delimiter = " : ";
-        size_t pos = lines[i].find(delimiter);
-        std::string spot = lines[i].substr(0, pos);
-        std::string idString = lines[i].substr(pos + delimiter.length());
-        int customerId = std::stoi(idString);
-        if (customerId == id) {
-            lines[i] = spot + " : " + "-1";
-        }
+    if (parkingSpot <= 0 || parkingSpot > lines.size()) {
+        std::cerr << "spot não encontrada." << std::endl;
+        return;
     }
+
+    // Update the specific line
+    std::stringstream ss;
+    ss << "spot" << parkingSpot << " : " << "-1";
+    std::string newLine = ss.str();
+    lines[parkingSpot - 1] = newLine;
 
     // Write the updated lines back to the file
     std::ofstream outFile("parking_lot.dat");

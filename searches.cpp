@@ -60,7 +60,7 @@ Customer sequentialSearchOfACustomer(FILE *file, int id)
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start); // calculate duration in microseconds
 
     std::ofstream outfile;
-    outfile.open("sequential_log.txt", std::ios_base::app); // open file in append mode
+    outfile.open("sequential_log.txt", std::ios_base::out); // open file in append mode
     outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
     outfile << "Number of comparisons: " << comparisons << std::endl;
     outfile.close(); // close file
@@ -93,7 +93,7 @@ Customer* binarySearchCustomer(FILE* file, int customerId) {
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start); // calculate duration in microseconds
 
             std::ofstream outfile;
-            outfile.open("binary_log.txt", std::ios_base::app); // open file in append mode
+            outfile.open("binary_log.txt", std::ios_base::out); // open file in append mode
             outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
             outfile << "Number of comparisons: " << comparisons << std::endl;
             outfile.close(); // close file
@@ -113,10 +113,14 @@ Customer* binarySearchCustomer(FILE* file, int customerId) {
     auto end = std::chrono::high_resolution_clock::now(); // end timer
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start); // calculate duration in microseconds
 
+    //erease previous content
+
+
     std::ofstream outfile;
-    outfile.open("binary_log.txt", std::ios_base::app); // open file in append mode
+    outfile.open("binary_log.txt", std::ios_base::out); // open file in append mode
     outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
     outfile << "Number of comparisons: " << comparisons << std::endl;
+    outfile.flush(); // flush buffer
     outfile.close(); // close file
 
     // Customer not found
@@ -156,6 +160,8 @@ Customer ParkingLotSearch(FILE *file, int parkingSpot) {
 
     parkingLotFile.close();
 }
+
+
 
 
 

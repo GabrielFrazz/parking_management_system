@@ -19,7 +19,7 @@ void MSG_MENU()
     std::cout << "\n\n\t7. Print parking lot"; //done, not printing properly when populated
     std::cout << "\n\n\t8. search for a parking space"; //done
     std::cout << "\n\n\t9. Park a car"; //done
-    std::cout << "\n\n\t10. Leave"; //unimplemented
+    std::cout << "\n\n\t10. Leave"; //done
     std::cout << "\n\n\t11. Exit";
 
 }

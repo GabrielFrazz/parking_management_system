@@ -53,7 +53,6 @@ void createsUnsortedDatabase(FILE* file, int size);
 int databaseSize();
 
 void printDatabase(FILE* file);
-int combineLogs();
 void shuffle(std::vector<int> &vet);
 
 #endif //PARKING_MANAGEMENT_SYSTEM_CUSTOMER_H
