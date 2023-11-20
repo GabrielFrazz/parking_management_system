@@ -18,7 +18,7 @@ Customer::Customer(int cod, std::string name, std::string cpf, std::string carMo
 
 int Customer::registerSize() const
 {
-    return sizeof(int) + name.size() + cpf.size() + carModel.size() + color.size() + date.size();
+    return sizeof(int) + 5 * (50 * sizeof(char) + 1);
 }
 
 //save the customer in the file
@@ -71,6 +71,22 @@ Customer* Customer::readCustomer(FILE *file)
     }
 
     return new Customer(cod, name, cpf, carModel, color, date);
+}
+
+// Read the customer at a specific position in the file
+Customer* Customer::readCustomerSpecific(FILE *file, int position)
+{
+    // Create a temporary instance of Customer to call registerSize()
+    Customer tempCustomer(0, "", "", "", "", "");
+
+    // Calculate the position in the file
+    long offset = position * tempCustomer.registerSize();
+
+    // Move the file pointer to the correct position
+    fseek(file, offset, SEEK_SET);
+
+    // Now call the existing readCustomer function
+    return readCustomer(file);
 }
 
 //print the customer
@@ -181,11 +197,11 @@ int databaseSize() {
 
     if (!file) {
         std::cerr << "Error opening file for reading." << std::endl;
-        return 1;
+        return -1;
     }
 
     file.seekg(0, std::ios::end);
-    int size = trunc(file.tellg() / sizeof(Customer));
+    int size = file.tellg() / Customer().registerSize();
 
     return size;
 }
@@ -193,7 +209,23 @@ int databaseSize() {
 
 void createsSortedDatabase(FILE* file, int size) {
     for (int i = 0; i < size; i++) {
-        Customer customer(i, generateRandomNames(), generateRandomCPF(), generateRandomCarModel(), generateRandomColor(), generateRandomDate());
+        //create a new customer and adds 50 spaces at the end of each string
+        std::string name = generateRandomNames();
+        name.resize(50, ' ');
+
+        std::string cpf = generateRandomCPF();
+        cpf.resize(50, ' ');
+
+        std::string carModel = generateRandomCarModel();
+        carModel.resize(50, ' ');
+
+        std::string color = generateRandomColor();
+        color.resize(50, ' ');
+
+        std::string date = generateRandomDate();
+        date.resize(50, ' ');
+
+        Customer customer(i, name, cpf, carModel, color, date);
         customer.savesCustomer(file);
     }
     fclose(file);

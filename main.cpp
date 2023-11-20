@@ -26,7 +26,6 @@ int main() {
     fclose(parkingLot);
     
 
-    
     return 0;
 }
 

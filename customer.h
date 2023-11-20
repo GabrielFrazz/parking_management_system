@@ -29,6 +29,7 @@ public:
     void savesCustomer(FILE *file) const;
     //read the customer from the file
     static Customer* readCustomer(FILE *file);
+    static Customer* readCustomerSpecific(FILE *file, int position);
     void printCustomer() const;
 
 

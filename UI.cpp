@@ -118,6 +118,7 @@ void MENU(FILE *customers, FILE *parkingLot)
                 std::cerr << "Error opening file for reading." << std::endl;
                 break;
             }
+            
             std::cout << "\n\n\n\t >>>>>> MSG: Binary search for a customer...!!! <<<<<<\n";
             //ask for the customer id
             std::cout << "\nEnter customer ID: ";
@@ -126,7 +127,7 @@ void MENU(FILE *customers, FILE *parkingLot)
             //call the function to search for a customer
 
             Customer *foundCustomer ;
-            foundCustomer = binarySearchCustomer(customers, id, 100);
+            foundCustomer = binarySearchCustomer(customers, id);
 
             if (foundCustomer) {
                 std::cout << "\nCustomer found:\n";

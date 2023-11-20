@@ -68,36 +68,36 @@ Customer sequentialSearchOfACustomer(FILE *file, int id)
     return customer;
 }
 
-
-Customer* binarySearchCustomer(FILE* file, int targetCod, int size) {
+Customer* binarySearchCustomer(FILE* file, int customerId) {
     int left = 0;
-    int right = size - 1;
+    int right = databaseSize() - 1;
 
     while (left <= right) {
-        int mid = (left+right) / 2;
+        int mid = left + (right - left) / 2;
 
-        // move the file cursor to the middle of the file
-        fseek(file, mid * Customer().registerSize(), SEEK_SET);
+        Customer* customer = Customer::readCustomerSpecific(file, mid);
+        if (customer == nullptr) {
+            // Error reading the customer
+            return nullptr;
+        }
 
-        // read the customer at the middle position
-        Customer *customer = Customer::readCustomer(file);
-
-        if (customer->cod == targetCod) {
+        if (customer->cod == customerId) {
+            // Found the customer
             return customer;
-        } else if (customer->cod < targetCod) {
-            // search the right half of the file
+        } else if (customer->cod < customerId) {
+            // The customer is in the right half
             left = mid + 1;
         } else {
-            // search the left half of the file
+            // The customer is in the left half
             right = mid - 1;
         }
+
+        delete customer;
     }
 
-    // customer not found
+    // Customer not found
     return nullptr;
 }
-
-
 
 Customer ParkingLotSearch(FILE *file, int parkingSpot) {
     std::ifstream parkingLotFile("parking_lot.dat", std::ios::in | std::ios::binary);

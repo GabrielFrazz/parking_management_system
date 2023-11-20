@@ -28,3 +28,59 @@ Time taken by function: 1002 microseconds
 Number of comparisons: 5
 Time taken by function: 1003 microseconds
 Number of comparisons: 100
+Time taken by function: 0 microseconds
+Number of comparisons: 1
+Time taken by function: 1782 microseconds
+Number of comparisons: 1
+Time taken by function: 1782 microseconds
+Number of comparisons: 1
+Time taken by function: 2811 microseconds
+Number of comparisons: 1
+Time taken by function: 2811 microseconds
+Number of comparisons: 1
+Time taken by function: 2811 microseconds
+Number of comparisons: 1
+Time taken by function: 2811 microseconds
+Number of comparisons: 1
+Time taken by function: 0 microseconds
+Number of comparisons: 1
+Time taken by function: 1004 microseconds
+Number of comparisons: 1
+Time taken by function: 2194 microseconds
+Number of comparisons: 1
+Time taken by function: 2194 microseconds
+Number of comparisons: 1
+Time taken by function: 2194 microseconds
+Number of comparisons: 1
+Time taken by function: 3402 microseconds
+Number of comparisons: 1
+Time taken by function: 3402 microseconds
+Number of comparisons: 1
+Time taken by function: 0 microseconds
+Number of comparisons: 1
+Time taken by function: 1004 microseconds
+Number of comparisons: 1
+Time taken by function: 1004 microseconds
+Number of comparisons: 1
+Time taken by function: 1004 microseconds
+Number of comparisons: 1
+Time taken by function: 1004 microseconds
+Number of comparisons: 1
+Time taken by function: 2180 microseconds
+Number of comparisons: 1
+Time taken by function: 2180 microseconds
+Number of comparisons: 1
+Time taken by function: 0 microseconds
+Number of comparisons: 1
+Time taken by function: 1003 microseconds
+Number of comparisons: 1
+Time taken by function: 1999 microseconds
+Number of comparisons: 1
+Time taken by function: 1999 microseconds
+Number of comparisons: 1
+Time taken by function: 3027 microseconds
+Number of comparisons: 1
+Time taken by function: 3027 microseconds
+Number of comparisons: 1
+Time taken by function: 3027 microseconds
+Number of comparisons: 1

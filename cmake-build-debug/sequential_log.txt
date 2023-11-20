@@ -970,3 +970,11 @@ Time taken by function: 0 microseconds
 Number of comparisons: 0
 Time taken by function: 0 microseconds
 Number of comparisons: 0
+Time taken by function: 992 microseconds
+Number of comparisons: 34
+Time taken by function: 2008 microseconds
+Number of comparisons: 56
+Time taken by function: 996 microseconds
+Number of comparisons: 34
+Time taken by function: 4516 microseconds
+Number of comparisons: 34

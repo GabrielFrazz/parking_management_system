@@ -5,7 +5,8 @@
 
 //searches
 Customer sequentialSearchOfACustomer(FILE *file, int id);
-Customer* binarySearchCustomer(FILE* file, int targetCod, int size);
+Customer* binarySearchCustomer(FILE* file, int customerId);
 Customer ParkingLotSearch(FILE *file, int parkingSpot);
+
 
 #endif //PARKING_MANAGEMENT_SYSTEM_SEARCHES_H
