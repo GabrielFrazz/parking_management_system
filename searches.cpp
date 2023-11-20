@@ -72,16 +72,31 @@ Customer* binarySearchCustomer(FILE* file, int customerId) {
     int left = 0;
     int right = databaseSize() - 1;
 
+    int comparisons = 0; // initialize comparison counter
+
+    auto start = std::chrono::high_resolution_clock::now(); // start timer
+
     while (left <= right) {
         int mid = left + (right - left) / 2;
 
         Customer* customer = Customer::readCustomerSpecific(file, mid);
+
+        comparisons++;
         if (customer == nullptr) {
             // Error reading the customer
             return nullptr;
         }
 
+        comparisons++;
         if (customer->cod == customerId) {
+            auto end = std::chrono::high_resolution_clock::now(); // end timer
+            auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start); // calculate duration in microseconds
+
+            std::ofstream outfile;
+            outfile.open("binary_log.txt", std::ios_base::app); // open file in append mode
+            outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
+            outfile << "Number of comparisons: " << comparisons << std::endl;
+            outfile.close(); // close file
             // Found the customer
             return customer;
         } else if (customer->cod < customerId) {
@@ -94,6 +109,15 @@ Customer* binarySearchCustomer(FILE* file, int customerId) {
 
         delete customer;
     }
+
+    auto end = std::chrono::high_resolution_clock::now(); // end timer
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start); // calculate duration in microseconds
+
+    std::ofstream outfile;
+    outfile.open("binary_log.txt", std::ios_base::app); // open file in append mode
+    outfile << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
+    outfile << "Number of comparisons: " << comparisons << std::endl;
+    outfile.close(); // close file
 
     // Customer not found
     return nullptr;

@@ -14,9 +14,9 @@ void MSG_MENU()
     std::cout << "\n\n\t2. Create a unsorted customer database"; //done
     std::cout << "\n\n\t3. Print database"; //done
     std::cout << "\n\n\t4. Sequential search for a customer"; //done
-    std::cout << "\n\n\t5. Binary search for a customer"; //unimplemented
-    std::cout << "\n\n\t6. Populate parking lot"; //unimplemented
-    std::cout << "\n\n\t7. Print parking lot"; //done
+    std::cout << "\n\n\t5. Binary search for a customer"; //done
+    std::cout << "\n\n\t6. Populate parking lot"; //done, not printing properly
+    std::cout << "\n\n\t7. Print parking lot"; //done, not printing properly when populated
     std::cout << "\n\n\t8. search for a parking space"; //done
     std::cout << "\n\n\t9. Park a car"; //done
     std::cout << "\n\n\t10. Leave"; //unimplemented
@@ -24,7 +24,7 @@ void MSG_MENU()
 
 }
 
-void MENU(FILE *customers, FILE *parkingLot)
+void MENU(FILE *customers)
 {
 
     int option;
@@ -118,7 +118,7 @@ void MENU(FILE *customers, FILE *parkingLot)
                 std::cerr << "Error opening file for reading." << std::endl;
                 break;
             }
-            
+
             std::cout << "\n\n\n\t >>>>>> MSG: Binary search for a customer...!!! <<<<<<\n";
             //ask for the customer id
             std::cout << "\nEnter customer ID: ";
@@ -172,12 +172,7 @@ void MENU(FILE *customers, FILE *parkingLot)
                 break;
             }
             system("cls");
-            std::cout << "\n\n\t >>>>>> MSG: choose the option...!!! <<<<<<\n";
-            std::cout << "\n[1] park an existing customer\n[2] park a new customer\n-->";
-            std::cin >> option;
-            if(option == 1){
-
-            }
+            std::cout.flush();
             std::cout << "\n\n\n\t >>>>>> MSG: choose the spot...!!! <<<<<<\n";
             int spot;
             std::cout << "Enter parking spot: ";

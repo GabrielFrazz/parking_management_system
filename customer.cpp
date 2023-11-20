@@ -183,6 +183,13 @@ Customer addNewCustomer(FILE *file, int cod) {
     std::cout << "\n\n\tDate: ";
     std::cin >> date;
 
+    // Resize the strings to 50 characters
+    name.resize(50, ' ');
+    cpf.resize(50, ' ');
+    carModel.resize(50, ' ');
+    color.resize(50, ' ');
+    date.resize(50, ' ');
+    
     Customer customer(cod, name, cpf, carModel, color, date);
     customer.savesCustomer(file);
     fclose(file);

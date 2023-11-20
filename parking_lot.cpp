@@ -115,6 +115,7 @@ void printParkingLot(FILE *file) {
         int customerId = std::stoi(id);
         if(customerId != -1){
             c = sequentialSearchOfACustomer(file, customerId);
+            std::cout.flush();
             printf("%s : %s\n", spot.c_str(), c.name.c_str());
         }else{
             std::cout << spot << " : " << "empty parking space" << std::endl;
