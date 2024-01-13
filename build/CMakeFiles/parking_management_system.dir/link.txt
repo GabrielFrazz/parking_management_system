@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\parking_management_system.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\parking_management_system.dir/objects.a @CMakeFiles\parking_management_system.dir\objects1.rsp
+C:\MinGW\bin\g++.exe  -std=c++11 -g -Wl,--whole-archive CMakeFiles\parking_management_system.dir/objects.a -Wl,--no-whole-archive -o parking_management_system.exe -Wl,--out-implib,libparking_management_system.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\parking_management_system.dir\linkLibs.rsp

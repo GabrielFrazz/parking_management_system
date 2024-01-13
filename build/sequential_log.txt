@@ -1,0 +1,5 @@
+	>>>>> Sequential search <<<<<
+		Database size: 100
+		Customer cod: 13
+- Time taken by function: 0 seconds
+- Number of comparisons: 26

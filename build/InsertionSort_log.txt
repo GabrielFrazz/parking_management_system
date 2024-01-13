@@ -1,0 +1,4 @@
+	>>>>> Insertion Sort <<<<<
+		Database size: 100
+- Time taken by function: 0.054572 seconds
+- Number of comparisons: 2400

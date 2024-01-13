@@ -1,0 +1,6 @@
+	>>>>> External Sort <<<<<
+		Database size: 10000
+- Total time taken: 0.419306 seconds
+- Number of comparisons: 10010
+- Time taken by Substitution Selection: 0.240031 seconds
+- Time taken by Optimal Interleaving: 0.179275 seconds

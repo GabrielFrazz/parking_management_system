@@ -1,0 +1,5 @@
+	>>>>> Binary search <<<<<
+		Database size: 1000
+		Customer cod: 499
+- Time taken by function: 0 seconds
+- Number of comparisons: 2
