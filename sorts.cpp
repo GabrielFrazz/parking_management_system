@@ -34,7 +34,7 @@ void insertionSort(FILE *file, int size) {
     outfile.open("InsertionSort_log.txt", std::ios_base::out); // open file in append mode
     outfile << "\t>>>>> Insertion Sort <<<<<" << std::endl;
     outfile << "\t\tDatabase size: " << databaseSize() <<std::endl;
-    outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+    outfile << "\033[31m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
     outfile << "- Number of comparisons: " << comparisons << std::endl;
     outfile.close(); // close file
 }
@@ -68,7 +68,7 @@ void bubbleSort(FILE *file, int size) {
     outfile.open("BubbleSort_log.txt", std::ios_base::out); // open file in append mode
     outfile << "\t>>>>> Bubble Sort <<<<<" << std::endl;
     outfile << "\t\tDatabase size: " << databaseSize() <<std::endl;
-    outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+    outfile << "\033[31m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
     outfile << "- Number of comparisons: " << comparisons << std::endl;
     outfile.close(); // close file
 }
@@ -113,7 +113,7 @@ void shellSort(FILE *file, int size) {
     outfile.open("ShellSort_log.txt", std::ios_base::out); // open file in append mode
     outfile << "\t>>>>> Shell Sort <<<<<" << std::endl;
     outfile << "\t\tDatabase size: " << size << std::endl;
-    outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+    outfile << "\033[31m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
     outfile << "- Number of comparisons: " << comparisons << std::endl;
     outfile.close(); // close file
 

@@ -1,0 +1,68 @@
+[
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\UI.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\UI.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/UI.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/UI.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\customer.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\customer.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/customer.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/customer.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\customer_hash.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\customer_hash.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/customer_hash.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\external_chaining.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\external_chaining.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/external_chaining.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\external_sorting.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\external_sorting.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/external_sorting.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\hash_compartment.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\hash_compartment.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/hash_compartment.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\main.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\main.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/main.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\parking_lot.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\parking_lot.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/parking_lot.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\searches.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\searches.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/searches.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/searches.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\sorts.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\sorts.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/sorts.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/sorts.cpp.obj"
+},
+{
+  "directory": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -std=c++11 -g -std=gnu++11 -o CMakeFiles\\parking_management_system.dir\\tests.cpp.obj -c \"C:\\Users\\bielf\\OneDrive\\Documents\\VS College\\AEDS II\\Trabalho\\parking_management_system\\tests.cpp\"",
+  "file": "C:/Users/bielf/OneDrive/Documents/VS College/AEDS II/Trabalho/parking_management_system/tests.cpp",
+  "output": "CMakeFiles/parking_management_system.dir/tests.cpp.obj"
+}
+]

@@ -1,179 +1,179 @@
 
+>>>>>>>>>> Logs for 100 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 100
+[31m- Time taken by function: 0.081179 seconds[0m
+- Number of comparisons: 503
+
+	>>>>> External Sort <<<<<
+		Database size: 100
+[32m- Total time taken: 0.120363 seconds[0m
+- Number of comparisons: 1240
+[34m- Time taken by Substitution Selection: 0.034011 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.086352 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 200 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 200
+[31m- Time taken by function: 0.171949 seconds[0m
+- Number of comparisons: 1203
+
+	>>>>> External Sort <<<<<
+		Database size: 200
+[32m- Total time taken: 0.080422 seconds[0m
+- Number of comparisons: 2890
+[34m- Time taken by Substitution Selection: 0.031588 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.048834 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 300 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 300
+[31m- Time taken by function: 0.281536 seconds[0m
+- Number of comparisons: 2104
+
+	>>>>> External Sort <<<<<
+		Database size: 300
+[32m- Total time taken: 0.083526 seconds[0m
+- Number of comparisons: 4700
+[34m- Time taken by Substitution Selection: 0.03864 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.044886 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 400 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 400
+[31m- Time taken by function: 0.413064 seconds[0m
+- Number of comparisons: 2803
+
+	>>>>> External Sort <<<<<
+		Database size: 400
+[32m- Total time taken: 0.142315 seconds[0m
+- Number of comparisons: 6469
+[34m- Time taken by Substitution Selection: 0.05188 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.090435 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 500 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 500
+[31m- Time taken by function: 0.515029 seconds[0m
+- Number of comparisons: 3506
+
+	>>>>> External Sort <<<<<
+		Database size: 500
+[32m- Total time taken: 0.093629 seconds[0m
+- Number of comparisons: 8253
+[34m- Time taken by Substitution Selection: 0.046882 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.046747 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 600 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 600
+[31m- Time taken by function: 0.702078 seconds[0m
+- Number of comparisons: 4804
+
+	>>>>> External Sort <<<<<
+		Database size: 600
+[32m- Total time taken: 0.145833 seconds[0m
+- Number of comparisons: 10090
+[34m- Time taken by Substitution Selection: 0.075895 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.069938 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 700 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 700
+[31m- Time taken by function: 0.82886 seconds[0m
+- Number of comparisons: 5606
+
+	>>>>> External Sort <<<<<
+		Database size: 700
+[32m- Total time taken: 0.105678 seconds[0m
+- Number of comparisons: 11948
+[34m- Time taken by Substitution Selection: 0.062329 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.043349 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 800 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 800
+[31m- Time taken by function: 1.01511 seconds[0m
+- Number of comparisons: 6403
+
+	>>>>> External Sort <<<<<
+		Database size: 800
+[32m- Total time taken: 0.129476 seconds[0m
+- Number of comparisons: 13834
+[34m- Time taken by Substitution Selection: 0.083227 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.046249 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 900 elements <<<<<<<<<<
+
+	>>>>> Shell Sort <<<<<
+		Database size: 900
+[31m- Time taken by function: 1.17942 seconds[0m
+- Number of comparisons: 7204
+
+	>>>>> External Sort <<<<<
+		Database size: 900
+[32m- Total time taken: 0.11419 seconds[0m
+- Number of comparisons: 15779
+[34m- Time taken by Substitution Selection: 0.073185 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.041005 seconds[0m
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 >>>>>>>>>> Logs for 1000 elements <<<<<<<<<<
 
 	>>>>> Shell Sort <<<<<
 		Database size: 1000
-- Time taken by function: 0.498292 seconds
+[31m- Time taken by function: 1.18946 seconds[0m
 - Number of comparisons: 8006
 
 	>>>>> External Sort <<<<<
 		Database size: 1000
-- Total time taken: 0.062734 seconds
-- Number of comparisons: 1010
-- Time taken by Substitution Selection: 0.034484 seconds
-- Time taken by Optimal Interleaving: 0.02825 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 2000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 2000
-- Time taken by function: 1.1735 seconds
-- Number of comparisons: 18006
-
-	>>>>> External Sort <<<<<
-		Database size: 2000
-- Total time taken: 0.099049 seconds
-- Number of comparisons: 2010
-- Time taken by Substitution Selection: 0.06473 seconds
-- Time taken by Optimal Interleaving: 0.034319 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 3000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 3000
-- Time taken by function: 1.91809 seconds
-- Number of comparisons: 30007
-
-	>>>>> External Sort <<<<<
-		Database size: 3000
-- Total time taken: 0.139211 seconds
-- Number of comparisons: 3010
-- Time taken by Substitution Selection: 0.079335 seconds
-- Time taken by Optimal Interleaving: 0.059876 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 4000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 4000
-- Time taken by function: 2.73122 seconds
-- Number of comparisons: 40006
-
-	>>>>> External Sort <<<<<
-		Database size: 4000
-- Total time taken: 0.162114 seconds
-- Number of comparisons: 4010
-- Time taken by Substitution Selection: 0.094597 seconds
-- Time taken by Optimal Interleaving: 0.067517 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 5000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 5000
-- Time taken by function: 3.73786 seconds
-- Number of comparisons: 55005
-
-	>>>>> External Sort <<<<<
-		Database size: 5000
-- Total time taken: 0.209141 seconds
-- Number of comparisons: 5010
-- Time taken by Substitution Selection: 0.120995 seconds
-- Time taken by Optimal Interleaving: 0.088146 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 6000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 6000
-- Time taken by function: 4.56173 seconds
-- Number of comparisons: 66007
-
-	>>>>> External Sort <<<<<
-		Database size: 6000
-- Total time taken: 0.236171 seconds
-- Number of comparisons: 6010
-- Time taken by Substitution Selection: 0.140058 seconds
-- Time taken by Optimal Interleaving: 0.096113 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 7000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 7000
-- Time taken by function: 5.30715 seconds
-- Number of comparisons: 77007
-
-	>>>>> External Sort <<<<<
-		Database size: 7000
-- Total time taken: 0.28923 seconds
-- Number of comparisons: 7010
-- Time taken by Substitution Selection: 0.173438 seconds
-- Time taken by Optimal Interleaving: 0.115792 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 8000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 8000
-- Time taken by function: 6.30523 seconds
-- Number of comparisons: 88006
-
-	>>>>> External Sort <<<<<
-		Database size: 8000
-- Total time taken: 0.351597 seconds
-- Number of comparisons: 8010
-- Time taken by Substitution Selection: 0.197457 seconds
-- Time taken by Optimal Interleaving: 0.15414 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 9000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 9000
-- Time taken by function: 7.60842 seconds
-- Number of comparisons: 108005
-
-	>>>>> External Sort <<<<<
-		Database size: 9000
-- Total time taken: 0.370067 seconds
-- Number of comparisons: 9010
-- Time taken by Substitution Selection: 0.208774 seconds
-- Time taken by Optimal Interleaving: 0.161293 seconds
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>>>>> Logs for 10000 elements <<<<<<<<<<
-
-	>>>>> Shell Sort <<<<<
-		Database size: 10000
-- Time taken by function: 8.29765 seconds
-- Number of comparisons: 120005
-
-	>>>>> External Sort <<<<<
-		Database size: 10000
-- Total time taken: 0.419306 seconds
-- Number of comparisons: 10010
-- Time taken by Substitution Selection: 0.240031 seconds
-- Time taken by Optimal Interleaving: 0.179275 seconds
+[32m- Total time taken: 0.139018 seconds[0m
+- Number of comparisons: 17911
+[34m- Time taken by Substitution Selection: 0.082372 seconds[0m
+[34m- Time taken by Optimal Interleaving: 0.056646 seconds[0m
 
 
 ------------------------------------------------------------------------------------------------------------------------

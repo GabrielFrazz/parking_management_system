@@ -96,10 +96,38 @@ CMakeFiles/parking_management_system.dir/customer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_management_system.dir/customer.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\customer.cpp" -o CMakeFiles\parking_management_system.dir\customer.cpp.s
 
+CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
+CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/customer_hash.cpp
+CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj -MF CMakeFiles\parking_management_system.dir\customer_hash.cpp.obj.d -o CMakeFiles\parking_management_system.dir\customer_hash.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\customer_hash.cpp"
+
+CMakeFiles/parking_management_system.dir/customer_hash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parking_management_system.dir/customer_hash.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\customer_hash.cpp" > CMakeFiles\parking_management_system.dir\customer_hash.cpp.i
+
+CMakeFiles/parking_management_system.dir/customer_hash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_management_system.dir/customer_hash.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\customer_hash.cpp" -o CMakeFiles\parking_management_system.dir\customer_hash.cpp.s
+
+CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
+CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/external_chaining.cpp
+CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj -MF CMakeFiles\parking_management_system.dir\external_chaining.cpp.obj.d -o CMakeFiles\parking_management_system.dir\external_chaining.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\external_chaining.cpp"
+
+CMakeFiles/parking_management_system.dir/external_chaining.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parking_management_system.dir/external_chaining.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\external_chaining.cpp" > CMakeFiles\parking_management_system.dir\external_chaining.cpp.i
+
+CMakeFiles/parking_management_system.dir/external_chaining.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_management_system.dir/external_chaining.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\external_chaining.cpp" -o CMakeFiles\parking_management_system.dir\external_chaining.cpp.s
+
 CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
 CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/external_sorting.cpp
 CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj -MF CMakeFiles\parking_management_system.dir\external_sorting.cpp.obj.d -o CMakeFiles\parking_management_system.dir\external_sorting.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\external_sorting.cpp"
 
 CMakeFiles/parking_management_system.dir/external_sorting.cpp.i: cmake_force
@@ -110,10 +138,24 @@ CMakeFiles/parking_management_system.dir/external_sorting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_management_system.dir/external_sorting.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\external_sorting.cpp" -o CMakeFiles\parking_management_system.dir\external_sorting.cpp.s
 
+CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
+CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/hash_compartment.cpp
+CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj -MF CMakeFiles\parking_management_system.dir\hash_compartment.cpp.obj.d -o CMakeFiles\parking_management_system.dir\hash_compartment.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\hash_compartment.cpp"
+
+CMakeFiles/parking_management_system.dir/hash_compartment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parking_management_system.dir/hash_compartment.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\hash_compartment.cpp" > CMakeFiles\parking_management_system.dir\hash_compartment.cpp.i
+
+CMakeFiles/parking_management_system.dir/hash_compartment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parking_management_system.dir/hash_compartment.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\hash_compartment.cpp" -o CMakeFiles\parking_management_system.dir\hash_compartment.cpp.s
+
 CMakeFiles/parking_management_system.dir/main.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
 CMakeFiles/parking_management_system.dir/main.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/main.cpp
 CMakeFiles/parking_management_system.dir/main.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/parking_management_system.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/parking_management_system.dir/main.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/main.cpp.obj -MF CMakeFiles\parking_management_system.dir\main.cpp.obj.d -o CMakeFiles\parking_management_system.dir\main.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\main.cpp"
 
 CMakeFiles/parking_management_system.dir/main.cpp.i: cmake_force
@@ -127,7 +169,7 @@ CMakeFiles/parking_management_system.dir/main.cpp.s: cmake_force
 CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
 CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/parking_lot.cpp
 CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj -MF CMakeFiles\parking_management_system.dir\parking_lot.cpp.obj.d -o CMakeFiles\parking_management_system.dir\parking_lot.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\parking_lot.cpp"
 
 CMakeFiles/parking_management_system.dir/parking_lot.cpp.i: cmake_force
@@ -141,7 +183,7 @@ CMakeFiles/parking_management_system.dir/parking_lot.cpp.s: cmake_force
 CMakeFiles/parking_management_system.dir/searches.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
 CMakeFiles/parking_management_system.dir/searches.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/searches.cpp
 CMakeFiles/parking_management_system.dir/searches.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/parking_management_system.dir/searches.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/parking_management_system.dir/searches.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/searches.cpp.obj -MF CMakeFiles\parking_management_system.dir\searches.cpp.obj.d -o CMakeFiles\parking_management_system.dir\searches.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\searches.cpp"
 
 CMakeFiles/parking_management_system.dir/searches.cpp.i: cmake_force
@@ -155,7 +197,7 @@ CMakeFiles/parking_management_system.dir/searches.cpp.s: cmake_force
 CMakeFiles/parking_management_system.dir/sorts.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
 CMakeFiles/parking_management_system.dir/sorts.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/sorts.cpp
 CMakeFiles/parking_management_system.dir/sorts.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/parking_management_system.dir/sorts.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/parking_management_system.dir/sorts.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/sorts.cpp.obj -MF CMakeFiles\parking_management_system.dir\sorts.cpp.obj.d -o CMakeFiles\parking_management_system.dir\sorts.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\sorts.cpp"
 
 CMakeFiles/parking_management_system.dir/sorts.cpp.i: cmake_force
@@ -169,7 +211,7 @@ CMakeFiles/parking_management_system.dir/sorts.cpp.s: cmake_force
 CMakeFiles/parking_management_system.dir/tests.cpp.obj: CMakeFiles/parking_management_system.dir/flags.make
 CMakeFiles/parking_management_system.dir/tests.cpp.obj: C:/Users/bielf/OneDrive/Documents/VS\ College/AEDS\ II/Trabalho/parking_management_system/tests.cpp
 CMakeFiles/parking_management_system.dir/tests.cpp.obj: CMakeFiles/parking_management_system.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/parking_management_system.dir/tests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/parking_management_system.dir/tests.cpp.obj"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/parking_management_system.dir/tests.cpp.obj -MF CMakeFiles\parking_management_system.dir\tests.cpp.obj.d -o CMakeFiles\parking_management_system.dir\tests.cpp.obj -c "C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\tests.cpp"
 
 CMakeFiles/parking_management_system.dir/tests.cpp.i: cmake_force
@@ -184,7 +226,10 @@ CMakeFiles/parking_management_system.dir/tests.cpp.s: cmake_force
 parking_management_system_OBJECTS = \
 "CMakeFiles/parking_management_system.dir/UI.cpp.obj" \
 "CMakeFiles/parking_management_system.dir/customer.cpp.obj" \
+"CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj" \
+"CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj" \
 "CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj" \
+"CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj" \
 "CMakeFiles/parking_management_system.dir/main.cpp.obj" \
 "CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj" \
 "CMakeFiles/parking_management_system.dir/searches.cpp.obj" \
@@ -196,7 +241,10 @@ parking_management_system_EXTERNAL_OBJECTS =
 
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/UI.cpp.obj
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/customer.cpp.obj
+parking_management_system.exe: CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj
+parking_management_system.exe: CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/external_sorting.cpp.obj
+parking_management_system.exe: CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/main.cpp.obj
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/parking_lot.cpp.obj
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/searches.cpp.obj
@@ -206,7 +254,7 @@ parking_management_system.exe: CMakeFiles/parking_management_system.dir/build.ma
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/linkLibs.rsp
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/objects1.rsp
 parking_management_system.exe: CMakeFiles/parking_management_system.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable parking_management_system.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\bielf\OneDrive\Documents\VS College\AEDS II\Trabalho\parking_management_system\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable parking_management_system.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\parking_management_system.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

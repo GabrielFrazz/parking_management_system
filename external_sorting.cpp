@@ -29,8 +29,8 @@ void substitutionSelectionSort(FILE* mainFile, int databaseSize, int partitionSi
 
 
         std::sort(partition.begin(), partition.end(), [](Customer* a, Customer* b) {
-            return a->cod < b->cod;
             comparations++;
+            return a->cod < b->cod;
         });
 
 
@@ -81,8 +81,8 @@ void optimalInterleaving(FILE* mainFile, int numberOfPartitions, int partitionSi
     while (!customers.empty()) {
         
         auto minCustomer = std::min_element(customers.begin(), customers.end(), [](Customer* a, Customer* b) {
-            return a->cod < b->cod;
             comparations++;
+            return a->cod < b->cod;
         });
 
         
@@ -193,10 +193,10 @@ void writeLog() {
 
     outfile << "\t>>>>> External Sort <<<<<" << std::endl;
     outfile << "\t\tDatabase size: " << databaseSize() << std::endl;
-    outfile << "- Total time taken: " << totalDuration.count() << " seconds" << std::endl;
+    outfile << "\033[32m- Total time taken: " << totalDuration.count() << " seconds\033[0m" << std::endl;
     outfile << "- Number of comparisons: " << comparations << std::endl;
-    outfile << "- Time taken by Substitution Selection: " << durationSubstitutionSelectionSort.count() << " seconds" << std::endl;
-    outfile << "- Time taken by Optimal Interleaving: " << durationOptimalInterleaving.count() << " seconds" << std::endl;
+    outfile << "\033[34m- Time taken by Substitution Selection: " << durationSubstitutionSelectionSort.count() << " seconds\033[0m" << std::endl;
+    outfile << "\033[34m- Time taken by Optimal Interleaving: " << durationOptimalInterleaving.count() << " seconds\033[0m" << std::endl;
     outfile.close(); // close file
     //reset global variables
     durationSubstitutionSelectionSort = std::chrono::seconds(0);
@@ -210,7 +210,7 @@ void writeSubstitutionSelectionSort() {
 
     outfile << "\n\t>>>>> Substitution Selection <<<<<" << std::endl;
     outfile << "\t\tDatabase size: " << databaseSize() << std::endl;
-    outfile << "- Time taken by function: " << durationSubstitutionSelectionSort.count() << " seconds" << std::endl;
+    outfile << "\033[32m- Time taken by function: " << durationSubstitutionSelectionSort.count() << " seconds\033[0m" << std::endl;
     outfile << "- Number of comparisons: " << comparations << std::endl;
     outfile.close(); // close file
     //reset global variables
@@ -224,7 +224,7 @@ void writeOptimalInterleaving() {
 
     outfile << "\n\t>>>>> Optimal Interleaving <<<<<" << std::endl;
     outfile << "\t\tDatabase size: " << databaseSize() << std::endl;
-    outfile << "- Time taken by function: " << durationOptimalInterleaving.count() << " seconds" << std::endl;
+    outfile << "\033[32m- Time taken by function: " << durationOptimalInterleaving.count() << " seconds\033[0m" << std::endl;
     outfile << "- Number of comparisons: " << comparations << std::endl;
     outfile.close(); // close file
     //reset global variables

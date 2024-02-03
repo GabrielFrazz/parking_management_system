@@ -5,11 +5,14 @@
 #include "sorts.h"
 #include "external_sorting.h"
 #include "tests.h"
+#include "external_chaining.h"
+#include "customer_hash.h"
 
 
 #include <iostream>
 #include <fstream>
 #include <winbase.h>
+#include <unordered_map>
 
 #include <chrono>
 #include <atomic>
@@ -54,7 +57,11 @@ void MSG_MENU()
     std::cout << "\n\n\t16. Create Partitions";                  // done
     std::cout << "\n\n\t17. Merge Partitions";                   // done
     std::cout << "\n\n\t18. Sorting tests";                      // done
-    std::cout << "\n\n\t19. Exit";
+    std::cout << "\n\n\t19. Create hash table";                  // done
+    std::cout << "\n\n\t20. Search hash table";                  // done
+    std::cout << "\n\n\t21. Delete in hash table";               // done
+    std::cout << "\n\n\t22. Print hash table";                   // done
+    std::cout << "\n\n\t23. Exit";
 }
 
 void MENU(FILE *customers)
@@ -62,6 +69,9 @@ void MENU(FILE *customers)
 
     //customer
     Customer c = Customer();
+    Customer* customer = new Customer();
+    Customer *foundCustomer = NULL;
+    TCustomerHash *customerHash = NULL;
 
     //variable for switch
     int option;
@@ -78,10 +88,22 @@ void MENU(FILE *customers)
     int size = 100;
     createsSortedDatabase(customers, size);
 
+
+
     // variables for tests
     int start;
     int finish;
     int interval;
+
+    //hash 
+    FILE *arq_hash;
+    FILE *aux;
+    FILE *data_file;
+    int position;
+    int cod;
+    int hash_size = databaseSize()/4;
+
+
 
 
     do
@@ -225,7 +247,6 @@ void MENU(FILE *customers)
 
             // call the function to search for a customer
 
-            Customer *foundCustomer;
             foundCustomer = binarySearchCustomer(customers, id);
 
             if (foundCustomer)
@@ -586,7 +607,156 @@ void MENU(FILE *customers)
 
             std::cin.get();
             break;
+
         case 19:
+            system("cls");
+            // Add a small delay
+#ifdef _WIN32   
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+#else           
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems 
+#endif
+
+            std::cout << "\n\n\n\t >>>>>> MSG: Creating hash table...!!! <<<<<<\n";
+
+            arq_hash = fopen("hash_table.dat", "wb+");
+            data_file = fopen("customers_hash.dat", "wb+");
+            customers = fopen("customers.dat", "rb+");
+
+            if (arq_hash == NULL)
+            {
+                std::cerr << "Error opening file for reading." << std::endl;
+                break;
+            }   
+
+            if(data_file == NULL){
+                std::cerr << "Error opening file for reading." << std::endl;
+                break;
+            }
+            hash_size = databaseSize()/4;
+
+            creates_hash("hash_table.dat", hash_size);
+
+            for (int i = 0; i < databaseSize(); i++)
+            {
+                customer = Customer::readCustomerSpecific(customers,i);
+
+                char name[50]; // Adjust the size as needed
+                strncpy(name, customer->name.c_str(), sizeof(name));
+                name[sizeof(name) - 1] = '\0'; // Ensure null termination
+
+                char cpf[50]; // Adjust the size as needed
+                strncpy(cpf, customer->cpf.c_str(), sizeof(cpf));
+                cpf[sizeof(cpf) - 1] = '\0'; // Ensure null termination
+
+                char carModel[50]; // Adjust the size as needed
+                strncpy(carModel, customer->carModel.c_str(), sizeof(carModel));
+                carModel[sizeof(carModel) - 1] = '\0'; // Ensure null termination
+
+                char color[50]; // Adjust the size as needed
+                strncpy(color, customer->color.c_str(), sizeof(color));
+                color[sizeof(color) - 1] = '\0'; // Ensure null termination
+
+                char date[50]; // Adjust the size as needed
+                strncpy(date, customer->date.c_str(), sizeof(date));
+                date[sizeof(date) - 1] = '\0'; // Ensure null termination
+
+
+
+                customerHash = createCustomer(i, name, cpf, carModel, color, date, -1);
+                insert(customerHash, arq_hash, "customers_hash.dat", hash_size);
+            }
+
+            std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
+            system("PAUSE");
+            std::cin.get();
+            break;
+
+        case 20:
+            system("cls");
+            // Add a small delay
+#ifdef _WIN32   
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+#else           
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems 
+#endif
+
+            std::cout << "\n\n\n\t >>>>>> MSG: Searching hash table...!!! <<<<<<\n";
+
+
+            std::cout << "\nEnter the customer code: ";
+            std::cin >> cod;
+
+            hash_size = databaseSize()/4;
+
+            position = search(cod, arq_hash, "customers_hash.dat", hash_size);
+
+            if(position != -1){
+                aux = fopen("customers_hash.dat", "rb");
+                fseek(aux, customerSize() * position, SEEK_SET);
+                customerHash = readCustomer(aux);
+                printCustomer(customerHash);
+                fclose(aux);
+            }else{
+                std::cout << "Customer not found" << std::endl;
+            }
+
+
+
+
+            std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
+            system("PAUSE");
+            std::cin.get();
+            break;
+
+        case 21:
+            system("cls");
+            // Add a small delay
+#ifdef _WIN32   
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+#else           
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems 
+#endif
+
+            std::cout << "\n\n\n\t >>>>>> MSG: Deleting in hash table...!!! <<<<<<\n";
+
+            std::cout << "\nEnter the customer code: ";
+            std::cin >> cod;
+
+            hash_size = databaseSize()/4;
+
+            delete_in_hash(cod, arq_hash, "customers_hash.dat", hash_size);
+
+            
+            std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
+            system("PAUSE");
+            std::cin.get();
+            break;
+
+        case 22:
+            system("cls");
+            // Add a small delay
+#ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+#else   
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+
+#endif  
+
+
+            std::cout << "\n\n\n\t >>>>>> MSG: Printing hash ...!!! <<<<<<\n";
+            arq_hash = fopen("hash_table.dat", "rb");
+
+            
+
+            print_hash(arq_hash, "customers_hash.dat", hash_size);
+            std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
+            system("PAUSE");
+            std::cin.get();
+            break;
+
+
+        case 23:
 
             system("cls");
             // Add a small delay
@@ -613,5 +783,7 @@ void MENU(FILE *customers)
             std::cin.get();
         }
         
-    } while (option != 19);
+    } while (option != 23);
 }
+
+

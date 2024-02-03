@@ -176,6 +176,54 @@ customer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/customer.cpp.s
 .PHONY : customer.cpp.s
 
+customer_hash.obj: customer_hash.cpp.obj
+.PHONY : customer_hash.obj
+
+# target to build an object file
+customer_hash.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/customer_hash.cpp.obj
+.PHONY : customer_hash.cpp.obj
+
+customer_hash.i: customer_hash.cpp.i
+.PHONY : customer_hash.i
+
+# target to preprocess a source file
+customer_hash.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/customer_hash.cpp.i
+.PHONY : customer_hash.cpp.i
+
+customer_hash.s: customer_hash.cpp.s
+.PHONY : customer_hash.s
+
+# target to generate assembly for a file
+customer_hash.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/customer_hash.cpp.s
+.PHONY : customer_hash.cpp.s
+
+external_chaining.obj: external_chaining.cpp.obj
+.PHONY : external_chaining.obj
+
+# target to build an object file
+external_chaining.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/external_chaining.cpp.obj
+.PHONY : external_chaining.cpp.obj
+
+external_chaining.i: external_chaining.cpp.i
+.PHONY : external_chaining.i
+
+# target to preprocess a source file
+external_chaining.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/external_chaining.cpp.i
+.PHONY : external_chaining.cpp.i
+
+external_chaining.s: external_chaining.cpp.s
+.PHONY : external_chaining.s
+
+# target to generate assembly for a file
+external_chaining.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/external_chaining.cpp.s
+.PHONY : external_chaining.cpp.s
+
 external_sorting.obj: external_sorting.cpp.obj
 .PHONY : external_sorting.obj
 
@@ -199,6 +247,30 @@ external_sorting.s: external_sorting.cpp.s
 external_sorting.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/external_sorting.cpp.s
 .PHONY : external_sorting.cpp.s
+
+hash_compartment.obj: hash_compartment.cpp.obj
+.PHONY : hash_compartment.obj
+
+# target to build an object file
+hash_compartment.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/hash_compartment.cpp.obj
+.PHONY : hash_compartment.cpp.obj
+
+hash_compartment.i: hash_compartment.cpp.i
+.PHONY : hash_compartment.i
+
+# target to preprocess a source file
+hash_compartment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/hash_compartment.cpp.i
+.PHONY : hash_compartment.cpp.i
+
+hash_compartment.s: hash_compartment.cpp.s
+.PHONY : hash_compartment.s
+
+# target to generate assembly for a file
+hash_compartment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\parking_management_system.dir\build.make CMakeFiles/parking_management_system.dir/hash_compartment.cpp.s
+.PHONY : hash_compartment.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -335,9 +407,18 @@ help:
 	@echo ... customer.obj
 	@echo ... customer.i
 	@echo ... customer.s
+	@echo ... customer_hash.obj
+	@echo ... customer_hash.i
+	@echo ... customer_hash.s
+	@echo ... external_chaining.obj
+	@echo ... external_chaining.i
+	@echo ... external_chaining.s
 	@echo ... external_sorting.obj
 	@echo ... external_sorting.i
 	@echo ... external_sorting.s
+	@echo ... hash_compartment.obj
+	@echo ... hash_compartment.i
+	@echo ... hash_compartment.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

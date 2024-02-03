@@ -1,5 +1,5 @@
 
 	>>>>> Substitution Selection <<<<<
 		Database size: 100
-- Time taken by function: 0.002203 seconds
-- Number of comparisons: 0
+[32m- Time taken by function: 0.016128 seconds[0m
+- Number of comparisons: 316
