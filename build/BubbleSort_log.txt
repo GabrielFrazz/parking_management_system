@@ -1,4 +1,0 @@
-	>>>>> Bubble Sort <<<<<
-		Database size: 100
-[31m- Time taken by function: 0.455147 seconds[0m
-- Number of comparisons: 4950

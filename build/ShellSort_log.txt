@@ -1,4 +1,0 @@
-	>>>>> Shell Sort <<<<<
-		Database size: 1000
-[31m- Time taken by function: 1.18946 seconds[0m
-- Number of comparisons: 8006

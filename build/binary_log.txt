@@ -1,5 +1,0 @@
-	>>>>> Binary search <<<<<
-		Database size: 10000
-		Customer cod: 8965
-- Time taken by function: 0 seconds
-- Number of comparisons: 24

@@ -38,31 +38,19 @@ void MSG_MENU()
 #else
     usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
 #endif
-    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MENU OPTIONS <<<<<<<<<<<<<<<<<<<<<<<<";
-    std::cout << "\n\n\t1. Create a sorted customer database";   // done
-    std::cout << "\n\n\t2. Create a unsorted customer database"; // done
-    std::cout << "\n\n\t3. Print database";                      // done
-    std::cout << "\n\n\t4. Sequential search for a customer";    // done
-    std::cout << "\n\n\t5. Binary search for a customer";        // done
-    std::cout << "\n\n\t6. Populate parking lot";                // done
-    std::cout << "\n\n\t7. Print parking lot";                   // done
-    std::cout << "\n\n\t8. search for a parking space";          // done
-    std::cout << "\n\n\t9. Park a car";                          // done
-    std::cout << "\n\n\t10. Leave";                              // done
-    std::cout << "\n\n\t11. Bubble sort";                        // done
-    std::cout << "\n\n\t12. Selection sort";                     // done
-    std::cout << "\n\n\t13. Shell sort";                         // done
-    std::cout << "\n\n\t14. External sort";                      // done
-    std::cout << "\n\n\t15. Print partitions";                   // done
-    std::cout << "\n\n\t16. Create Partitions";                  // done
-    std::cout << "\n\n\t17. Merge Partitions";                   // done
-    std::cout << "\n\n\t18. Sorting tests";                      // done
-    std::cout << "\n\n\t19. Create hash table";                  // done
-    std::cout << "\n\n\t20. Search hash table";                  // done
-    std::cout << "\n\n\t21. Delete in hash table";               // done
-    std::cout << "\n\n\t22. Print hash table";                   // done
-    std::cout << "\n\n\t23. Test Hash";                          // done
-    std::cout << "\n\n\t24. Exit";
+    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>>>>> MENU OPTIONS <<<<<<<<<<<<<<<<<<<<<<<<<<<";
+    std::cout << "\n\n\t1. Create a sorted customer database\t\t13. Shell sort";
+    std::cout << "\n\n\t2. Create a unsorted customer database\t\t14. External sort";
+    std::cout << "\n\n\t3. Print database\t\t\t\t15. Print partitions";
+    std::cout << "\n\n\t4. Sequential search for a customer\t\t16. Create Partitions";
+    std::cout << "\n\n\t5. Binary search for a customer\t\t\t17. Merge Partitions";
+    std::cout << "\n\n\t6. Populate parking lot\t\t\t\t18. Sorting tests";
+    std::cout << "\n\n\t7. Print parking lot\t\t\t\t19. Create hash table";
+    std::cout << "\n\n\t8. Search for a parking space\t\t\t20. Search hash table";
+    std::cout << "\n\n\t9. Park a car\t\t\t\t\t21. Delete in hash table";
+    std::cout << "\n\n\t10. Leave\t\t\t\t\t22. Print hash table";
+    std::cout << "\n\n\t11. Bubble sort\t\t\t\t\t23. Test Hash";
+    std::cout << "\n\n\t12. Selection sort\t\t\t\t24. Exit";
 }
 
 void MENU(FILE *customers)
@@ -677,7 +665,7 @@ void MENU(FILE *customers)
                 outfile.open("hashInsertion_log.txt", std::ios_base::out); // open file in append mode
                 outfile << "\t>>>>> Hash Insertion <<<<<" << std::endl;
                 outfile << "\t\tDatabase size: " << databaseSize() <<std::endl;
-                outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+                outfile << "- Total time taken: " << duration.count() << " seconds" << std::endl;
                 outfile << "- Time taken by each insertion: " << duration.count()/databaseSize() << " seconds" << std::endl;
                 outfile.close(); // close file
             }

@@ -1,5 +1,0 @@
-
-	>>>>> Optimal Interleaving <<<<<
-		Database size: 100
-[32m- Time taken by function: 0.004176 seconds[0m
-- Number of comparisons: 948
