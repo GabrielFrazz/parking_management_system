@@ -1,10 +1,114 @@
 
->>>>>>>>>> Logs for 200000 elements <<<<<<<<<<
+>>>>>>>>>> Logs for 10 elements <<<<<<<<<<
 
-	>>>>> Hash Search <<<<<
-		Database size: 200000
-[31m- Time taken by function: 0 seconds[0m
-- Number of comparisons: 6
+	>>>>> Hash Insertion <<<<<
+		Database size: 10
+- Time taken by function: 0.05975 seconds
+- Time taken by each insertion: 0.005975 seconds
+
+	>>>>> Hash search <<<<<
+		Database size: 10
+		Customer cod: 0
+- Time taken by function: 0 seconds
+- Number of comparisons: 5
+
+	>>>>> Hash deletion <<<<<
+		Database size: 10
+		Customer cod: 8
+- Time taken by function: 0 seconds
+- Number of comparisons: 13
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 20 elements <<<<<<<<<<
+
+	>>>>> Hash Insertion <<<<<
+		Database size: 20
+- Time taken by function: 0.125198 seconds
+- Time taken by each insertion: 0.0062599 seconds
+
+	>>>>> Hash search <<<<<
+		Database size: 20
+		Customer cod: 5
+- Time taken by function: 0 seconds
+- Number of comparisons: 7
+
+	>>>>> Hash deletion <<<<<
+		Database size: 20
+		Customer cod: 5
+- Time taken by function: 0 seconds
+- Number of comparisons: 7
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 30 elements <<<<<<<<<<
+
+	>>>>> Hash Insertion <<<<<
+		Database size: 30
+- Time taken by function: 0.186305 seconds
+- Time taken by each insertion: 0.00621017 seconds
+
+	>>>>> Hash search <<<<<
+		Database size: 30
+		Customer cod: 23
+- Time taken by function: 0 seconds
+- Number of comparisons: 11
+
+	>>>>> Hash deletion <<<<<
+		Database size: 30
+		Customer cod: 11
+- Time taken by function: 0 seconds
+- Number of comparisons: 7
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 40 elements <<<<<<<<<<
+
+	>>>>> Hash Insertion <<<<<
+		Database size: 40
+- Time taken by function: 0.249824 seconds
+- Time taken by each insertion: 0.0062456 seconds
+
+	>>>>> Hash search <<<<<
+		Database size: 40
+		Customer cod: 5
+- Time taken by function: 0 seconds
+- Number of comparisons: 5
+
+	>>>>> Hash deletion <<<<<
+		Database size: 40
+		Customer cod: 1
+- Time taken by function: 0 seconds
+- Number of comparisons: 5
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>>>>> Logs for 50 elements <<<<<<<<<<
+
+	>>>>> Hash Insertion <<<<<
+		Database size: 50
+- Time taken by function: 0.330938 seconds
+- Time taken by each insertion: 0.00661876 seconds
+
+	>>>>> Hash search <<<<<
+		Database size: 50
+		Customer cod: 28
+- Time taken by function: 0 seconds
+- Number of comparisons: 9
+
+	>>>>> Hash deletion <<<<<
+		Database size: 50
+		Customer cod: 19
+- Time taken by function: 0 seconds
+- Number of comparisons: 7
 
 
 ------------------------------------------------------------------------------------------------------------------------

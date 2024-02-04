@@ -1,5 +1,5 @@
 	>>>>> Sequential search <<<<<
-		Database size: 20000
-		Customer cod: 18000
-- Time taken by function: 0.5252 seconds
-- Number of comparisons: 18001
+		Database size: 10000
+		Customer cod: 3976
+- Time taken by function: 0.050934 seconds
+- Number of comparisons: 3977

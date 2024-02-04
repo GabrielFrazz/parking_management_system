@@ -22,5 +22,6 @@ void print_hash(FILE *hash_file, const char* data_file_name, int size);
 
 void printHashInsertLog();
 void printHashSearchLog();
+void printHashDeletionLog();
 
 #endif //HASH_TABLE_EXTERNAL_CHAINING_H

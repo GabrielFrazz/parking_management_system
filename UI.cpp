@@ -61,7 +61,8 @@ void MSG_MENU()
     std::cout << "\n\n\t20. Search hash table";                  // done
     std::cout << "\n\n\t21. Delete in hash table";               // done
     std::cout << "\n\n\t22. Print hash table";                   // done
-    std::cout << "\n\n\t23. Exit";
+    std::cout << "\n\n\t23. Test Hash";                          // done
+    std::cout << "\n\n\t24. Exit";
 }
 
 void MENU(FILE *customers)
@@ -747,6 +748,8 @@ void MENU(FILE *customers)
 
             delete_in_hash(cod, arq_hash, "customers_hash.dat", hash_size);
 
+            printHashDeletionLog();
+
             
             std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
             system("PAUSE");
@@ -765,9 +768,16 @@ void MENU(FILE *customers)
 
 
             std::cout << "\n\n\n\t >>>>>> MSG: Printing hash ...!!! <<<<<<\n";
+
             arq_hash = fopen("hash_table.dat", "rb");
 
-            
+            if (arq_hash == NULL) {
+                std::cerr << "Error: hash_table.dat does not exist or could not be opened.\n";
+                std::cerr << "Please create a hash table first.\n";
+                system("PAUSE");
+                std::cin.get();
+                break;
+            } 
 
             print_hash(arq_hash, "customers_hash.dat", hash_size);
             std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
@@ -775,8 +785,34 @@ void MENU(FILE *customers)
             std::cin.get();
             break;
 
-
+    
         case 23:
+            system("cls");
+            // Add a small delay
+#ifdef _WIN32
+            Sleep(100); // Sleep for 100 milliseconds on Windows
+#else
+            usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
+#endif
+
+            std::cout << "\n\n\n\t >>>>>> MSG: Testing hash...!!! <<<<<<\n";
+
+            
+            std::cout << "\nEnter the start size: ";
+            std::cin >> start;
+            std::cout << "\nEnter the finish size: ";
+            std::cin >> finish;
+            std::cout << "\nEnter the interval: ";
+            std::cin >> interval;
+
+            testHash(start, finish, interval);
+
+            std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
+            system("PAUSE");
+            std::cin.get();
+            break;
+
+        case 24:
 
             system("cls");
             // Add a small delay
@@ -786,6 +822,7 @@ void MENU(FILE *customers)
             usleep(100000); // Sleep for 100 milliseconds on Unix-based systems
 #endif
             std::cout << "\n\n\n\t >>>>>> MSG: Exiting the module...!!! <<<<<<\n";
+
             system("PAUSE");
             std::cin.get();
             break;
@@ -803,7 +840,7 @@ void MENU(FILE *customers)
             std::cin.get();
         }
         
-    } while (option != 23);
+    } while (option != 24);
 }
 
 

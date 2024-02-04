@@ -4,6 +4,7 @@
 #include <chrono>
 #include "customer.h"
 
+// Function to calculate the hash ()
 int hash(int cod, int size)
 {
     return cod % size;
@@ -235,9 +236,12 @@ void print_hash(FILE *hash_file, const char *data_file_name, int size)
 
 int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int size)
 {
+    auto start = std::chrono::high_resolution_clock::now(); // start timer
+    int comparisons = 0; // initialize comparison counter
     int h = hash(cod, size);
     int hash_position = h * compartment_size();
 
+    comparisons++;
     if(hash_position == 0){
         rewind(hash_file);
     }else{
@@ -245,8 +249,20 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
     }
 
     HashCompartment *compartment = reads_compartment(hash_file);
-
+    comparisons++;
     if(compartment->next == -1){
+        auto end = std::chrono::high_resolution_clock::now(); // end timer
+        auto duration = std::chrono::duration<double>(end - start); // calculate duration in seconds as a double // calculate duration in seconds
+
+        std::ofstream outfile;
+        outfile.open("hashDeletion_log.txt", std::ios_base::out); // open file in append mode
+        outfile << "\t>>>>> Hash deletion <<<<<" << std::endl;
+        outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
+        outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+        outfile << "- Number of comparisons: " << comparisons << std::endl;
+        outfile << "!!Customer not in the database!!" << std::endl;
+        outfile.close(); // close file
+
         return -1;
     }else{
         FILE *data_file = fopen(data_file_name, "r+b");
@@ -255,7 +271,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
             printf("Error opening data file\n");
             return -1;
         }
-
+        comparisons++;
         if(compartment->next == 0){
             rewind(data_file);
         }else{
@@ -265,6 +281,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
         int position = compartment->next;
         int previous = -1;
         while(position != -1){
+            comparisons++;
             if(position == 0){
                 rewind(data_file);
             }else{
@@ -272,7 +289,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
             }
 
             TCustomerHash *customer = readCustomer(data_file);
-
+            comparisons++;
             if(customer->cod == cod){
                 if(previous == -1){
                     compartment->next = customer->next;
@@ -288,6 +305,16 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
                 }
                 free(customer);
                 fclose(data_file);
+                auto end = std::chrono::high_resolution_clock::now(); // end timer
+                auto duration = std::chrono::duration<double>(end - start); // calculate duration in seconds as a double 
+                std::ofstream outfile;
+                outfile.open("hashDeletion_log.txt", std::ios_base::out); // open file in append mode
+                outfile << "\t>>>>> Hash deletion <<<<<" << std::endl;
+                outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
+                outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+                outfile << "- Number of comparisons: " << comparisons << std::endl;
+                outfile.close(); // close file
+
                 return 1;
             }else{
                 previous = position;
@@ -295,6 +322,18 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
             }
         }
         return -1;
+
+        auto end = std::chrono::high_resolution_clock::now(); // end timer
+        auto duration = std::chrono::duration<double>(end - start); // calculate duration in seconds as a double
+        std::ofstream outfile;
+        outfile.open("hashDeletion_log.txt", std::ios_base::out); // open file in append mode
+        outfile << "\t>>>>> Hash deletion <<<<<" << std::endl;
+        outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
+        outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+        outfile << "- Number of comparisons: " << comparisons << std::endl;
+        outfile << "!!Customer not in the database!!" << std::endl;
+        outfile.close(); // close file
+
     }
 }
 
@@ -312,6 +351,14 @@ void printHashSearchLog(){
     std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<<<<\n\n";
     std::cout << hashSearchLog.rdbuf();
     hashSearchLog.close();
+}
+
+void printHashDeletionLog(){
+    // Print the contents of the binary_log.txt
+    std::ifstream hashDeletionLog("hashDeletion_log.txt");
+    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<<<<\n\n";
+    std::cout << hashDeletionLog.rdbuf();
+    hashDeletionLog.close();
 }
 
 

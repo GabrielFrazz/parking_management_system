@@ -1,5 +1,5 @@
 	>>>>> Hash search <<<<<
-		Database size: 20000
-		Customer cod: 19999
-- Time taken by function: 0.002322 seconds
-- Number of comparisons: 11
+		Database size: 500
+		Customer cod: 325
+- Time taken by function: 0 seconds
+- Number of comparisons: 9
