@@ -1,5 +1,5 @@
 	>>>>> Binary search <<<<<
-		Database size: 100
-		Customer cod: 46
+		Database size: 20000
+		Customer cod: 19000
 - Time taken by function: 0 seconds
-- Number of comparisons: 14
+- Number of comparisons: 28

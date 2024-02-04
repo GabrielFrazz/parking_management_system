@@ -20,4 +20,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
 
 void print_hash(FILE *hash_file, const char* data_file_name, int size);
 
+void printHashInsertLog();
+void printHashSearchLog();
+
 #endif //HASH_TABLE_EXTERNAL_CHAINING_H

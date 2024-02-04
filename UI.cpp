@@ -91,9 +91,10 @@ void MENU(FILE *customers)
 
 
     // variables for tests
-    int start;
+    int start = 0;
     int finish;
     int interval;
+
 
     //hash 
     FILE *arq_hash;
@@ -636,36 +637,52 @@ void MENU(FILE *customers)
             hash_size = databaseSize()/4;
 
             creates_hash("hash_table.dat", hash_size);
-
-            for (int i = 0; i < databaseSize(); i++)
             {
-                customer = Customer::readCustomerSpecific(customers,i);
-
-                char name[50]; // Adjust the size as needed
-                strncpy(name, customer->name.c_str(), sizeof(name));
-                name[sizeof(name) - 1] = '\0'; // Ensure null termination
-
-                char cpf[50]; // Adjust the size as needed
-                strncpy(cpf, customer->cpf.c_str(), sizeof(cpf));
-                cpf[sizeof(cpf) - 1] = '\0'; // Ensure null termination
-
-                char carModel[50]; // Adjust the size as needed
-                strncpy(carModel, customer->carModel.c_str(), sizeof(carModel));
-                carModel[sizeof(carModel) - 1] = '\0'; // Ensure null termination
-
-                char color[50]; // Adjust the size as needed
-                strncpy(color, customer->color.c_str(), sizeof(color));
-                color[sizeof(color) - 1] = '\0'; // Ensure null termination
-
-                char date[50]; // Adjust the size as needed
-                strncpy(date, customer->date.c_str(), sizeof(date));
-                date[sizeof(date) - 1] = '\0'; // Ensure null termination
+                auto start = std::chrono::high_resolution_clock::now(); // start timer
 
 
+                for (int i = 0; i < databaseSize(); i++)
+                {
+                    customer = Customer::readCustomerSpecific(customers,i);
 
-                customerHash = createCustomer(i, name, cpf, carModel, color, date, -1);
-                insert(customerHash, arq_hash, "customers_hash.dat", hash_size);
+                    char name[50]; // Adjust the size as needed
+                    strncpy(name, customer->name.c_str(), sizeof(name));
+                    name[sizeof(name) - 1] = '\0'; // Ensure null termination
+
+                    char cpf[50]; // Adjust the size as needed
+                    strncpy(cpf, customer->cpf.c_str(), sizeof(cpf));
+                    cpf[sizeof(cpf) - 1] = '\0'; // Ensure null termination
+
+                    char carModel[50]; // Adjust the size as needed
+                    strncpy(carModel, customer->carModel.c_str(), sizeof(carModel));
+                    carModel[sizeof(carModel) - 1] = '\0'; // Ensure null termination
+
+                    char color[50]; // Adjust the size as needed
+                    strncpy(color, customer->color.c_str(), sizeof(color));
+                    color[sizeof(color) - 1] = '\0'; // Ensure null termination
+
+                    char date[50]; // Adjust the size as needed
+                    strncpy(date, customer->date.c_str(), sizeof(date));
+                    date[sizeof(date) - 1] = '\0'; // Ensure null termination
+
+
+
+                    customerHash = createCustomer(i, name, cpf, carModel, color, date, -1);
+                    insert(customerHash, arq_hash, "customers_hash.dat", hash_size);
+                }
+                auto end = std::chrono::high_resolution_clock::now(); // end timer
+                auto duration = std::chrono::duration<double>(end - start); // calculate duration in seconds as a double // calculate duration in seconds
+
+                outfile.open("hashInsertion_log.txt", std::ios_base::out); // open file in append mode
+                outfile << "\t>>>>> Hash Insertion <<<<<" << std::endl;
+                outfile << "\t\tDatabase size: " << databaseSize() <<std::endl;
+                outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+                outfile << "- Time taken by each insertion: " << duration.count()/databaseSize() << " seconds" << std::endl;
+                outfile.close(); // close file
             }
+
+
+            printHashInsertLog();
 
             std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
             system("PAUSE");
@@ -700,6 +717,9 @@ void MENU(FILE *customers)
             }else{
                 std::cout << "Customer not found" << std::endl;
             }
+
+
+            printHashSearchLog();
 
 
 

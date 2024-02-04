@@ -1,0 +1,4 @@
+	>>>>> Hash Insertion <<<<<
+		Database size: 20000
+- Time taken by function: 211.189 seconds
+- Time taken by each insertion: 0.0105594 seconds
