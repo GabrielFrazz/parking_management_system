@@ -328,8 +328,8 @@ void testHash(int start, int finish, int interval){
 
         insertLog << "\t>>>>> Hash Insertion <<<<<" << std::endl;
         insertLog << "\t\tDatabase size: " << databaseSize() <<std::endl;
-        insertLog << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
-        insertLog << "- Time taken by each insertion: " << duration.count()/databaseSize() << " seconds" << std::endl;
+        insertLog << "\033[33m- Total time taken: " << duration.count() << " seconds\033[0m" << std::endl;
+        insertLog << "\033[34m- Time taken by each insertion: " << duration.count()/databaseSize() << " seconds\033[0m" << std::endl;
         insertLog.close(); // close file
 
         std::cout << "* Searching in hash"  << std::endl;
@@ -480,6 +480,21 @@ void testHash(int start, int finish, int interval){
         remove(deletelogs[i].c_str());
 
     }
+    
+    //delete the files
+    fclose(arq_hash);
+    fclose(data_file);
+    remove("hash_table.dat");
+    remove("customers_hash.dat");
+
+    //creates a standard database
+    customers = fopen("customers.dat", "wb");
+    if (!customers)
+    {
+        std::cerr << "Error opening file for reading." << std::endl;
+        return;
+    }
+    createsSortedDatabase(customers, 100);
 
 
 

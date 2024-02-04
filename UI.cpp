@@ -586,6 +586,9 @@ void MENU(FILE *customers)
 
             std::cout << "\n\n\n\t >>>>>> MSG: Sorting tests...!!! <<<<<<\n";
 
+            std::cout << "\nThis test will run a series of sorts on a database of varying sizes.";
+            std::cout << "\nYou will need to provide the start size, finish size, and interval for the test.\n";
+
             std::cout << "\nEnter the start size: ";
             std::cin >> start;
             std::cout << "\nEnter the finish size: ";
@@ -625,10 +628,12 @@ void MENU(FILE *customers)
             }
             hash_size = databaseSize()/4;
 
+            //loading
+            std::cout << "\nLoading... \n";
+
             creates_hash("hash_table.dat", hash_size);
             {
                 auto start = std::chrono::high_resolution_clock::now(); // start timer
-
 
                 for (int i = 0; i < databaseSize(); i++)
                 {
@@ -658,6 +663,7 @@ void MENU(FILE *customers)
 
                     customerHash = createCustomer(i, name, cpf, carModel, color, date, -1);
                     insert(customerHash, arq_hash, "customers_hash.dat", hash_size);
+
                 }
                 auto end = std::chrono::high_resolution_clock::now(); // end timer
                 auto duration = std::chrono::duration<double>(end - start); // calculate duration in seconds as a double // calculate duration in seconds
@@ -665,15 +671,17 @@ void MENU(FILE *customers)
                 outfile.open("hashInsertion_log.txt", std::ios_base::out); // open file in append mode
                 outfile << "\t>>>>> Hash Insertion <<<<<" << std::endl;
                 outfile << "\t\tDatabase size: " << databaseSize() <<std::endl;
-                outfile << "- Total time taken: " << duration.count() << " seconds" << std::endl;
-                outfile << "- Time taken by each insertion: " << duration.count()/databaseSize() << " seconds" << std::endl;
+                outfile << "\033[33m- Total time taken: " << duration.count() << " seconds\033[0m" << std::endl;
+                outfile << "\033[34m- Time taken by each insertion: " << duration.count()/databaseSize() << " seconds\033[0m" << std::endl;
                 outfile.close(); // close file
             }
 
+            //message of success
+            std::cout << "\n\n\t >>>>>> MSG: Hash table created...!!! <<<<<<\n";
 
             printHashInsertLog();
 
-            std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
+            std::cout << "\n";
             system("PAUSE");
             std::cin.get();
             break;
@@ -688,6 +696,16 @@ void MENU(FILE *customers)
 #endif
 
             std::cout << "\n\n\n\t >>>>>> MSG: Searching hash table...!!! <<<<<<\n";
+
+            arq_hash = fopen("hash_table.dat", "rb");
+
+            if (arq_hash == NULL) {
+                std::cerr << "Error: hash_table.dat does not exist or could not be opened.\n";
+                std::cerr << "Please create a hash table first, with option 19.\n";
+                system("PAUSE");
+                std::cin.get();
+                break;
+            }
 
 
             std::cout << "\nEnter the customer code: ";
@@ -704,13 +722,14 @@ void MENU(FILE *customers)
                 printCustomer(customerHash);
                 fclose(aux);
             }else{
-                std::cout << "Customer not found" << std::endl;
+                std::cout << "\n\n------------------------------------------------------------\n";
+                std::cout << "ERROR: Customer with code " << cod << " was not found in the hash table.\n";
+                std::cout << "Please ensure the customer code is correct and try again.\n";
+                std::cout << "------------------------------------------------------------\n\n";
             }
 
 
             printHashSearchLog();
-
-
 
 
             std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
@@ -729,12 +748,34 @@ void MENU(FILE *customers)
 
             std::cout << "\n\n\n\t >>>>>> MSG: Deleting in hash table...!!! <<<<<<\n";
 
+            //tests if the hash table exists
+            arq_hash = fopen("hash_table.dat", "rb");
+
+            if (arq_hash == NULL) {
+                std::cerr << "Error: hash_table.dat does not exist or could not be opened.\n";
+                std::cerr << "Please create a hash table first, with option 19.\n";
+                system("PAUSE");
+                std::cin.get();
+                break;
+            }
+
             std::cout << "\nEnter the customer code: ";
             std::cin >> cod;
 
             hash_size = databaseSize()/4;
 
-            delete_in_hash(cod, arq_hash, "customers_hash.dat", hash_size);
+            position = delete_in_hash(cod, arq_hash, "customers_hash.dat", hash_size);
+
+            if(position != -1){
+                std::cout << "\n\n--------------------------------------------------------------------------------\n";
+                std::cout << "SUCCESS: Customer with code " << cod << " has been successfully deleted from the hash table.\n";
+                std::cout << "--------------------------------------------------------------------------------\n\n";
+            }else{
+                std::cout << "\n\n------------------------------------------------------------\n";
+                std::cout << "ERROR: Customer with code " << cod << " was not found in the hash table.\n";
+                std::cout << "Please ensure the customer code is correct and try again.\n";
+                std::cout << "------------------------------------------------------------\n\n";
+            }
 
             printHashDeletionLog();
 
@@ -761,7 +802,7 @@ void MENU(FILE *customers)
 
             if (arq_hash == NULL) {
                 std::cerr << "Error: hash_table.dat does not exist or could not be opened.\n";
-                std::cerr << "Please create a hash table first.\n";
+                std::cerr << "Please create a hash table first, with option 19.\n";
                 system("PAUSE");
                 std::cin.get();
                 break;
@@ -785,6 +826,9 @@ void MENU(FILE *customers)
 
             std::cout << "\n\n\n\t >>>>>> MSG: Testing hash...!!! <<<<<<\n";
 
+            std::cout << "\nThis test will run a series of operations on a hash table of varying sizes.";
+            std::cout << "\nYou will need to provide the start size, finish size, and interval for the test.\n";
+
             
             std::cout << "\nEnter the start size: ";
             std::cin >> start;
@@ -794,6 +838,7 @@ void MENU(FILE *customers)
             std::cin >> interval;
 
             testHash(start, finish, interval);
+
 
             std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";
             system("PAUSE");

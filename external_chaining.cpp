@@ -4,7 +4,7 @@
 #include <chrono>
 #include "customer.h"
 
-// Function to calculate the hash ()
+// Function to calculate the hash (type of hash: division method  k mod m)
 int hash(int cod, int size)
 {
     return cod % size;
@@ -55,7 +55,7 @@ int search(int cod, FILE *hash_file, const char *data_file_name, int size)
         outfile.open("HashSearch_log.txt", std::ios_base::out); // open file in append mode
         outfile << "\t>>>>> Hash search <<<<<" << std::endl;
         outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
-        outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+        outfile << "\033[32m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
         outfile << "- Number of comparisons: " << comparisons << std::endl;
         outfile << "!!Customer not found!!" << std::endl;
         outfile.close(); // close file
@@ -97,7 +97,7 @@ int search(int cod, FILE *hash_file, const char *data_file_name, int size)
                 outfile.open("HashSearch_log.txt", std::ios_base::out); // open file in append mode
                 outfile << "\t>>>>> Hash search <<<<<" << std::endl;
                 outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
-                outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+                outfile << "\033[32m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
                 outfile << "- Number of comparisons: " << comparisons << std::endl;
                 outfile.close(); // close file
                 return position;
@@ -113,7 +113,7 @@ int search(int cod, FILE *hash_file, const char *data_file_name, int size)
         outfile.open("HashSearch_log.txt", std::ios_base::out); // open file in append mode
         outfile << "\t>>>>> Hash search <<<<<" << std::endl;
         outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
-        outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+        outfile << "\033[32m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
         outfile << "- Number of comparisons: " << comparisons << std::endl;
         outfile << "!!Customer not found!!" << std::endl;
         outfile.close(); // close file
@@ -258,7 +258,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
         outfile.open("hashDeletion_log.txt", std::ios_base::out); // open file in append mode
         outfile << "\t>>>>> Hash deletion <<<<<" << std::endl;
         outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
-        outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+        outfile << "\033[32m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
         outfile << "- Number of comparisons: " << comparisons << std::endl;
         outfile << "!!Customer not in the database!!" << std::endl;
         outfile.close(); // close file
@@ -311,7 +311,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
                 outfile.open("hashDeletion_log.txt", std::ios_base::out); // open file in append mode
                 outfile << "\t>>>>> Hash deletion <<<<<" << std::endl;
                 outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
-                outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+                outfile << "\033[32m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
                 outfile << "- Number of comparisons: " << comparisons << std::endl;
                 outfile.close(); // close file
 
@@ -329,7 +329,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
         outfile.open("hashDeletion_log.txt", std::ios_base::out); // open file in append mode
         outfile << "\t>>>>> Hash deletion <<<<<" << std::endl;
         outfile << "\t\tDatabase size: " << databaseSize() << "\n\t\tCustomer cod: " << cod <<std::endl;
-        outfile << "- Time taken by function: " << duration.count() << " seconds" << std::endl;
+        outfile << "\033[32m- Time taken by function: " << duration.count() << " seconds\033[0m" << std::endl;
         outfile << "- Number of comparisons: " << comparisons << std::endl;
         outfile << "!!Customer not in the database!!" << std::endl;
         outfile.close(); // close file
@@ -340,7 +340,7 @@ int delete_in_hash(int cod, FILE *hash_file, const char *data_file_name, int siz
 void printHashInsertLog(){
     // Print the contents of the binary_log.txt
     std::ifstream hashInsertLog("hashInsertion_log.txt");
-    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<<<<\n\n";
+    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>> MSG: Insertion Info!!! <<<<<<<<<<<<<<<<<<<<<\n\n";
     std::cout << hashInsertLog.rdbuf();
     hashInsertLog.close();
 }
@@ -348,7 +348,7 @@ void printHashInsertLog(){
 void printHashSearchLog(){
     // Print the contents of the binary_log.txt
     std::ifstream hashSearchLog("HashSearch_log.txt");
-    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<<<<\n\n";
+    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<\n\n";
     std::cout << hashSearchLog.rdbuf();
     hashSearchLog.close();
 }
@@ -356,7 +356,7 @@ void printHashSearchLog(){
 void printHashDeletionLog(){
     // Print the contents of the binary_log.txt
     std::ifstream hashDeletionLog("hashDeletion_log.txt");
-    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>>>>> MSG: Search Info!!! <<<<<<<<<<<<<<<<<<<<<<<<\n\n";
+    std::cout << "\n\n\t>>>>>>>>>>>>>>>>>>>> MSG: Delete Info!!! <<<<<<<<<<<<<<<<<<<<<\n\n";
     std::cout << hashDeletionLog.rdbuf();
     hashDeletionLog.close();
 }
