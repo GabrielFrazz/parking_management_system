@@ -1,0 +1,5 @@
+	>>>>> Hash deletion <<<<<
+		Database size: 50
+		Customer cod: 33
+[32m- Time taken by function: 0 seconds[0m
+- Number of comparisons: 9

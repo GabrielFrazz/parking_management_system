@@ -627,6 +627,9 @@ void MENU(FILE *customers)
                 break;
             }
             hash_size = databaseSize()/4;
+            if(hash_size < 1){
+                hash_size = 1;
+            }
 
             //loading
             std::cout << "\nLoading... \n";
@@ -712,6 +715,9 @@ void MENU(FILE *customers)
             std::cin >> cod;
 
             hash_size = databaseSize()/4;
+            if(hash_size < 1){
+                hash_size = 1;
+            }
 
             position = search(cod, arq_hash, "customers_hash.dat", hash_size);
 
@@ -763,6 +769,9 @@ void MENU(FILE *customers)
             std::cin >> cod;
 
             hash_size = databaseSize()/4;
+            if(hash_size < 1){
+                hash_size = 1;
+            }
 
             position = delete_in_hash(cod, arq_hash, "customers_hash.dat", hash_size);
 
@@ -807,6 +816,9 @@ void MENU(FILE *customers)
                 std::cin.get();
                 break;
             } 
+            if(hash_size < 1){
+                hash_size = 1;
+            }
 
             print_hash(arq_hash, "customers_hash.dat", hash_size);
             std::cout << "\n\n\t >>>>>> MSG: Done...!!! <<<<<<\n";

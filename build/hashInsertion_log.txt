@@ -1,0 +1,4 @@
+	>>>>> Hash Insertion <<<<<
+		Database size: 100
+[33m- Total time taken: 1.35792 seconds[0m
+[34m- Time taken by each insertion: 0.0135792 seconds[0m
